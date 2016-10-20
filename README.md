@@ -7,4 +7,4 @@ Ystari is a software development framework that helps you build a reusable, main
 
 Join us on social media:
 * [Twitter](https://twitter.com/YstariFx)
-* [Facebook]{https://www.facebook.com/ystarifx}
+* [Facebook](https://www.facebook.com/ystarifx)
