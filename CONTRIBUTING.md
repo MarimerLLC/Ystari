@@ -38,7 +38,7 @@ or
 
 ## Submitting Changes
 
-* Print, sign, and email the [contributor agreement](https://github.com/MarimerLLC/Ystari/blob/master/Support/Contributions/CSLA%20Contributor%20Agreement.pdf?raw=true) document to Marimer LLC (rocky at lhotka dot net)
+* Print, sign, and email the [contributor agreement](https://github.com/MarimerLLC/Ystari/blob/master/Support/Contributions/Ystari%20Contributor%20Agreement.pdf?raw=true) document to Marimer LLC (rocky at lhotka dot net)
  * We will not accept large changes without a signed contributor agreement, but we may accept small edits to the existing codebase
  * By submitting a change, large or small, you grant ownership of the code and related IP to Marimer LLC, and you certify that you have the right to transfer such ownership
 * Push your changes to a topic branch in your fork of the repository.
