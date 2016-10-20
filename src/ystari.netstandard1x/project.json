@@ -1,0 +1,23 @@
+﻿{
+    "version": "1.0.0-*",
+
+    "buildOptions": {
+        "compile": [ "../ystari.shared/**/*.cs" ],
+        "embed": {
+            "include": [ "Properties/Resources.resx" ]
+        },
+        "define": [ "NETSTANDARD1" ],
+        "outputName": "Marimer.Ystari",
+        "xmlDoc": true
+    },
+
+    "dependencies": {
+        "NETStandard.Library": "1.6.0"
+    },
+
+    "frameworks": {
+        "netstandard1.6": {
+            "imports": "dnxcore50"
+        }
+    }
+}

@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ystari.shared", "ystari.shared\ystari.shared.shproj", "{E0FCAFCE-5E11-43B9-AF26-66DC5121958B}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ystari.netstandard1x", "ystari.netstandard1x\ystari.netstandard1x.xproj", "{B6C371B9-6169-48E6-B8A8-1E05852B56DC}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		ystari.shared\ystari.shared.projitems*{e0fcafce-5e11-43b9-af26-66dc5121958b}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6C371B9-6169-48E6-B8A8-1E05852B56DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6C371B9-6169-48E6-B8A8-1E05852B56DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6C371B9-6169-48E6-B8A8-1E05852B56DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6C371B9-6169-48E6-B8A8-1E05852B56DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
