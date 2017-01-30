@@ -1,0 +1,3 @@
+# Stereotypes
+
+TODO: Finish.
