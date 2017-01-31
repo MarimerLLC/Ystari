@@ -1,6 +1,6 @@
 #Ystari Design Goals
 
-Before we start to list out all of the goals, let's spend a bit of time going through the history of CSLA as it will frame the conversation for the motivation to create Ystari in the first place
+Before we start to list out all of the goals, let's spend a bit of time going through the history of CSLA as it will frame the conversation for the motivation to create Ystari in the first place.
 
 ##Background
 
@@ -17,27 +17,10 @@ That's where Ystari comes in. We want to use concepts and implementations that w
 
 ##Design Goals
 
-Note: each of these sections will eventually have links to other documents that will describe the goal in detail
-
 * [Build Targets](build_targets.md)
+* [Stereotypes](stereotypes.md)
+* [Asynchronous](asynchronous.md)
+* [Operations](operations.md)
+* [Serialization](serialization.md)
 * [DI/IoC](dependency_injection.md)
-
-##Enhancements to Ystari from CSLA .NET
-
-* Enable DI where possible
- * Method-level DI in server-side “data portal”
-  * Though I wonder if we couldn’t just always provide the DP_XYZ methods with a ‘context’ parameter, and have that object created via DI using ctor or property based injection?
- * Creation of business rule instances
-  * Also need some params when Execute is invoked – perhaps use standard DI to create a ‘context’ parameter?
- * Creation of domain graph? Not clear how this could happen.
- * Creation of the “data portal” client-side object.
-* Enable true async “data portal” behavior
- * Basically send/post semantics
-* Eliminate magic strings, in particular in the “data portal” behaviors
- * Either via attribute or interface (preferably interface)
-* Allow dev to decide between full and diffgram serialization on update/insert/delete
- * Requires maintaining a unique (to the graph) id field for each object within a graph; probably an Int32
- * Should have the option where the dev can provide their own visitor to each object in the graph, or a way of overriding the behavior of each object in the graph as it is visited, so it is possible for the dev to control which fields are included in the diffgram
-* Don’t serialize fields if they contain their default value
-* Remove Save/SaveAsync from BusinessBase type base classes and just allow/use extension methods to implement such methods on objects
-
+* [Rules](rules.md)
