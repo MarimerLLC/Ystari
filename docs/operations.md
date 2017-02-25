@@ -64,5 +64,3 @@ public class Customer
 In either case, Ystari would not need to rely heavily on Reflection to invoke the right operation. With interfaces, it would know which operation was requested (and criteria value, if any was provided). It would then do an `as` cast on the object to see if it implemented the correct operation interface. If so, it would call the method directly. With registrations, it would know if a method was registered for the requested operation (and criteria value, if any was provided). If it was registered, it would invoke it.
 
 Both have their advantages and disadvantages. At this point, we are leaning towards function registration. We've already done a couple of POCs - here's [one](https://github.com/keithdv/FunctionalMethodInjection2).
-
-TODO: Finish
