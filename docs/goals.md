@@ -23,5 +23,6 @@ That's where Ystari comes in. We want to use concepts and implementations that w
 * [Operations](operations.md)
 * [Serialization](serialization.md)
 * [DI/IoC](dependency_injection.md)
+* [Properties](properties.md)
 * [Rules](rules.md)
-* [Pipeline](rules.md)
+* [Pipeline](pipeline.md)
