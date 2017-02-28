@@ -1,4 +1,6 @@
 # Ystari
+
+[![Join the chat at https://gitter.im/MarimerLLC/Ystari](https://badges.gitter.im/MarimerLLC/Ystari.svg)](https://gitter.im/MarimerLLC/Ystari?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 Ystari business application development framework
 
 ![](Support/Logo/Ystari.png)
