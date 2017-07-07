@@ -1,0 +1,6 @@
+# Properties
+
+The plan is to use the same property management techniques that are used in CSLA. That is, all properties that are part of a domain object's state will be handled by a managed backing field based on `IPropertyInfo`. There are some minor potential improvements that may be made:
+
+* It's unclear what purpose [`RelationshipTypes`](https://github.com/MarimerLLC/csla/blob/248c0abd0c5c091e5a17f81b343f051e2cb16330/Source/Csla.Shared/RelationshipTypes.cs) has. For example, if a property type is based on `Lazy<T>`, that should imply that the relationship is of type `LazyLoad`.
+* Extending properties to have different behaviours is somewhat difficult - at the very least, the documentation around this should be clear. For example, the default behavior for properties is to report a change if a new value is different from the previous value. Some scenarios requies that a "change" means that the new value is different from the original value set during either the `Create` or `Fetch` operation. [This article](http://www.jasonbock.net/JB/News/Item/9cc70d85bef34e2b9a683ba82615f8a3) describes some of the work that needs to be done to implement this behavior. However, in Ystari, this should be pluggable as a dependency and not set through a static property.
