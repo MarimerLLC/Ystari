@@ -41,3 +41,5 @@ BusinessRules.AddRule(
 ```
 
 [Here's](https://github.com/keithdv/FluentBusinessRule) a POC of this idea in CSLA.
+
+**RDL:** The reason CSLA has the static method for per-type rules is so that those rules are available before any instance of the type has ever been created. The change we're discussing here would require that the type be instantiated at least once before per-type rules could be checked. So, for example, before the `CanCreateObject` behavior can be checked we actually need to create an instance of the type, even if the user doesn't have permissions to create an instance of the type.
