@@ -40,6 +40,8 @@ then Ystari will resolve each dependency that the tuple specifies, and then will
 
 While the majority of DI needs happens on the server, there are cases where a domain object will only need a dependency on the client side only. For example, if you have a parent-child relationship where you could have multiple children (think `Order` with `OrderItems` that contains `Order` objects), you need to add child objects in the client. To do this, you'll need a reference to something like `IDomainFactory<Order>` to call `CreateAsync()` in the client.
 
+**RDL:** I'm not sure the assumption here is correct. In .NET Core there's a DI model that is used by ASP.NET Core (for example) and CSLA 4.9 provides a little support for DI and page injection. But really this could go much, much further. Sort of like async/await, DI seems to be one of those things that is viral - for best results you need async from top to bottom, and the same is true with DI.
+
 Also, there are also cases where a dependency is mobile. In the previous case, we said that to create child objects you needed a client dependency. But it's also possible that the ability to add child objects needs to happen on the server as well. There are other cases where you need to reference the identity both on the client and the server. Typically, DI is location bound - that is, the dependency is never moved past the "host" in which it was resolved (which is typically an executable) and the object receiving the dependency is never serialized.
 
 We think there are a couple of ways to handle this scenario:
