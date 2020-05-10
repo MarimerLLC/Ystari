@@ -10,3 +10,5 @@ Ystari is a software development framework that helps you build a reusable, main
 Join us on social media:
 * [Twitter](https://twitter.com/YstariFx)
 * [Facebook](https://www.facebook.com/ystarifx)
+
+Note that no more work is going into Ystari. It led to a lot of design debate, and a fair amount of that ended up in CSLA, which was one of the desired effects.
